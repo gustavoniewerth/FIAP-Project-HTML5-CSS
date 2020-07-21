@@ -1,0 +1,181 @@
+/* FAZER A CHAMADA DA FONTE DO GOOGLE - USAR SEM MEDO */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Condensed&display=swap');
+
+/* HERANÇA: TOD0 ELEMENTO QUE FOR DESCENDENTE DE OUTRO ELEMENTO,
+HERDARA AS PROPRIEDADES DE SEU PAI */
+body{
+  font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+.redes-sociais{
+  font-size: 35px;
+  color: #ddd;
+  margin: 8px;
+}
+
+/* ESSE REGRA SERÁ APLICADA ASSIM QUE O PONTEIRO DO MOUSE PASSAR SOBRE O ELEMENTO */
+.redes-sociais:hover{
+  color: #333;
+}
+
+.fa-twitter:hover{
+  color:#00acee;
+}
+
+
+.central{
+  width: 800px;
+  height: 400px;
+  /* border: 5px solid; */
+  float: left;
+  margin: 20px 0px;
+  /* text-align: center; */
+}
+
+.projetos{
+  width: 780px;
+  height: 200px;
+  /* border: 1px solid; */
+  padding: 0px 20px;
+  box-sizing: border-box;
+  margin: 20px 0px;
+}
+
+
+.projetos p{
+  font-size: 17px;
+  text-align: justify;
+  line-height: 25px;
+
+}
+
+.projetos a{
+  text-decoration: none;
+  font-weight: 900;
+  border: 1px solid #369;
+  padding: 10px 40px;
+  color: #369;
+  /* ARREDONDAR AS BORDAS */
+  border-radius: 7px;
+}
+
+.projetos a:hover{
+  background: #369;
+  color: #fff;
+}
+
+
+
+/* FORMATARA APENAS AS IMAGENS NA CLASSE PROJETOS */
+.projetos img{
+  width: 250px;
+  height: 180px;
+  float: left;
+  margin-right: 20px;
+
+
+}
+
+
+/* CRIAMOS ESSA CLASSE PARA USAR COM O "SPAN" DENTRO DO TITULO DA PAGINA */
+.red{
+  color: #ddd;
+}
+
+.blue{
+  color: #00acee;
+}
+
+
+h1, h2{
+  font-size: 40px;
+  /* ALINHAMENTO DE TEXTO (LEFT, RIGHT, JUSTIFY, CENTER) */
+  text-align: center;
+}
+h2{
+  font-size: 30px;
+}
+
+p{
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* ESTILIZAR A CLASSE PRINCIPAL
+   DECLARAR O NOME DA CLASSE = .nomeClasse
+*/
+.principal{
+  /* LARGURA DO ELEMENTO - VALOR EM PX (PODE E DEVE MUDAR)*/
+  width: 1200px;
+  /* ALTURA DO ELEMENTO - VALOR EM PX OU PALAVRA RESERVADA */
+  height: auto;
+
+  /* BORDER - CONTORNO DA DIV - 3 PROPRIEDADES (TOP, RIGHT, BOTTOM, LEFT)
+     BORDER-WIDTH:  LARGURA DA BORDA - PIXELS - OCUPA ESÁÇO NA TELA
+     BORDER-STYLE: ESTILO - SOLID - DOTTED -
+     DASHED - DOUBLE - GROOVE - INSET - OUSET - NONE
+     BORDER-COLOR: COR DA BORDA - VALOR EM HEXADECIMAL - DEFAULT BLACK
+  */
+  border: 1px solid #eee;
+
+  /* MARGIN - DEFINE A DISTÂNCIA EXTERNA DOS ELEMENTOS - DEFINIR VALOR DE DISTÂNCIA
+     MARGIN É COMO  A BORDA (TOP, RIGHT, BOTTOM, LEFT)
+     O VALOR DEFINIDO SERÁ SEGUIDO PELAS MARGENS:
+     1 VALOR - TODAS AS MARGENS USARÃO ESSE VALOR
+     2 VALORES - 1º VALOR:TOP/BOTTOM - 2º VALOR: RIGHT/LEFT
+     3 VALORES - 1º VALOR: TOP - 2º VALOR: RIGHT/LEFT - 3º VALOR:BOTTOM
+     4 VALORES - 1º VALOR: TOP - 2º VALOR: RIGHT - 3º VALOR: BOTTOM - 4º VALOR: LEFT
+     margin: 50px 100px 150px 200px;
+  */
+
+
+  /* PADDING - PREENNCHIMENTO DA DISTANCIA DO CONTEUDO PARA AS BORDAS (EXTREMIDADES) - MESMO CONCEITO DA MARGEM - SÓ QUE NESSE CASO ELE É INTERNO, ENQUANTO A MARGEM É EXTERNO
+
+  QUANDO USAMOS PADDING, O VALOR DELE SERA ACRESCIDO DA LARGURA E ALTURA DO ELEMENTO
+
+  PROPRIEDADE HELP - "BOX-SIZING" QUANDO PADDING USE LA - VAI PERMITIR QUE SEJA APLICADO O ESPAÇAMENTO E NÃO ALTERA O TAMANHO DO ELEMENTO
+  "box sizing: border box"
+
+  MESMAS REGRAS DA MARGEM SE APLICA AO PADDING
+
+  */
+
+
+
+/* CENTRALIZANDO O CONTAINER */
+margin: 10px auto;
+
+}
+
+/* float: PERMITE QUE O CONTEUDO SAI DO SEU FLUXO NORMAL E FLUTUE PELA TELA - ESQUERDA / DIREITA - é mais ou menos legal porque tem uma dor
+float;left;
+float:right;
+float:center; - NUNCA FAÇA ISSO!!
+*/
+
+
+.lateral{
+  width: 350px;
+  height: auto;
+  background: #eee;
+  margin: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 40px 0;
+  float: left;
+}
+
+/* ESSA CLASSE IRA FORMATAR AS IMAGENS DA LATERAL */
+.lateral-imagens{
+  width: 300px;
+  height: 220px;
+  margin: 10px 0px;
+}
+
+/* NÃO VAI FUNCIONAR POIS TEMOS UMA CLASSE QUE CONTROLA AS IMAGENS
+CLASSE TEM MAIOR RELEVANCIA
+*/
+/* img{
+  width: 50px;
+  height: 80px;
+} */
